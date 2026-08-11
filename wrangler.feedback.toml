@@ -1,0 +1,19 @@
+name = "ch42-feedback"
+main = "feedback-worker.js"
+compatibility_date = "2025-01-01"
+
+# KV Namespace for feedback storage
+[[kv_namespaces]]
+binding = "FEEDBACK_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+# preview_id = "REPLACE_WITH_PREVIEW_KV_ID"
+
+# Route (optional — configure after first deploy)
+# routes = [
+#   { pattern = "feedback.luciddreamer.ai/*", zone_name = "luciddreamer.ai" }
+# ]
+
+# Vars (non-secret config)
+[vars]
+MAX_FEEDBACK_LENGTH = "500"
+RETENTION_DAYS = "30"

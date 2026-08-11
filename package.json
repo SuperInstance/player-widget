@@ -1,0 +1,28 @@
+{
+  "name": "@superinstance/player",
+  "version": "0.1.0",
+  "description": "Embeddable HLS audio player widget for LucidDreamer.AI streams",
+  "main": "app.js",
+  "style": "style.css",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "deploy": "npx wrangler pages deploy . --project-name luciddreamer-player"
+  },
+  "keywords": [
+    "audio",
+    "player",
+    "hls",
+    "streaming",
+    "luciddreamer",
+    "superinstance"
+  ],
+  "author": "Lucineer / Casey DiGenaro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superinstance/player.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  }
+}
